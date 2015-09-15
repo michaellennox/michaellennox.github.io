@@ -1,0 +1,74 @@
+---
+---
+
+/* sitewide formatting */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* index.html formatting */
+
+.landing {
+    height: 100vh;
+    background: url(images/laptop%20background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.main {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+.main h1 {
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.main p {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.main-btn {
+    background-color: #333;
+    padding: 10px 25px;
+    font-size: 18px;
+    letter-spacing: 6.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+.secondary {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.col {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.secondary h2 {
+  font-weight: bold;
+  font-size: 23px;
+  text-transform: uppercase;
+}
