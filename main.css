@@ -18,7 +18,7 @@ body {
     padding: 0 10px;
 }
 
-/* includes/footer.html formatting */
+/* _includes/footer.html formatting */
 
 .footer {
     background-color: #ffd452;
@@ -64,7 +64,7 @@ body {
     color: #fff;
 }
 
-/* includes/nav.html formatting */
+/* _includes/nav.html formatting */
 
 .nav {
     background-color: #ffd452;
@@ -177,4 +177,39 @@ body {
     border: 1px solid #000;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+/* about/index.html formatting */
+
+.wrapper-about {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 75px;
+}
+
+.content-about {
+    
+}
+
+.content-about h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.content-about h2 {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 60px 0 30px;
+}
+
+.content-about p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.content-about em {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
