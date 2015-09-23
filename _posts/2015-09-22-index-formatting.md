@@ -194,7 +194,7 @@ We have now built our basic HTML structure for the index, now I want to add the 
 </ul>
 {% endraw %}{% endhighlight %}
 
-It's important to use Liquid's `date:` filter or else your date will look like the picture at the top (ie ugly as sin). Here I've formatted it to show |shorthand day| |full month|, |full year|. For the full list of possible formats look at the documentation: https://docs.shopify.com/themes/liquid-documentation/filters/additional-filters#date.
+It's important to use Liquid's `date:` filter or else your date will look like the picture at the top (ie ugly as sin). Here I've formatted it to show shorthand-day month, year. For the full list of possible formats look at the documentation: https://docs.shopify.com/themes/liquid-documentation/filters/additional-filters#date.
 
 Now as far as I'm concerned my HTML is complete! (for now). So onwards to the CSS and the styling, there's nothing *different* here, it's just standard css like you'd use on any other page. *One thing to note*: Because both my column lists are using the `float:` CSS attribute they won't affect the height of my wrapper or container and as such will run into my footer. I'll fix this by adding `overflow: auto` to my wrapper.
 
