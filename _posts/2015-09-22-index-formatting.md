@@ -66,7 +66,7 @@ This looks like the following when jekyll combines the layouts:
 
 From here on in I'll just be including code snippets of the actual blog index (the section that falls between page.html's {% raw %} {{content}} {% endraw %} tags).
 
-If you want to see the contents of footer.html, nav.html and head.html this repo is available at: https://github.com/michaellennox/michaellennox.github.io. I doubt those sections have changed much since writing this post but they're not particularly relevant for the contents of this post.
+If you want to see the contents of footer.html, nav.html and head.html this repo is available at: [https://github.com/michaellennox/michaellennox.github.io](https://github.com/michaellennox/michaellennox.github.io). I doubt those sections have changed much since writing this post but they're not particularly relevant for the contents of this post.
 
 As I decided I wanted to make a two column layout seperating ramblings about development (like this post) from completely moronic ramblings about my life (which honestly, you probably don't want to bother reading) I just grabbed two classes I already used in other sections of this site - `.container` which limits my page widths and `.column` which creates my two equal width columns floating in the container (note: this layout doesn't work great on mobile, I'll/you'll need to add a media-query to turn each `.column` from 50% container width to 100% container width so they stack on top of each other for small screens).
 
@@ -140,7 +140,7 @@ category: rambleramble
 ---
 {% endhighlight %}
 
-There's a lot of other global variables you can use for other purposes - have a look at the docs for a few quick others: http://jekyllrb.com/docs/frontmatter/.
+There's a lot of other global variables you can use for other purposes - have a look at the docs for a few quick others: [http://jekyllrb.com/docs/frontmatter/](http://jekyllrb.com/docs/frontmatter/).
 
 Now we know that all my ramblings about nothing will have `category: rambleramble` and my ramblings about development related stuff will have `category: devramble` we can go back to html and create new templates to use these instead of finding the posts layout.
 
@@ -194,7 +194,7 @@ We have now built our basic HTML structure for the index, now I want to add the 
 </ul>
 {% endraw %}{% endhighlight %}
 
-It's important to use Liquid's `date:` filter or else your date will look like the picture at the top (ie ugly as sin). Here I've formatted it to show shorthand-day month, year. For the full list of possible formats look at the documentation: https://docs.shopify.com/themes/liquid-documentation/filters/additional-filters#date.
+It's important to use Liquid's `date:` filter or else your date will look like the picture at the top (ie ugly as sin). Here I've formatted it to show shorthand-day month, year. For the full list of possible formats look at the documentation: [https://docs.shopify.com/themes/liquid-documentation/filters/additional-filters#date](https://docs.shopify.com/themes/liquid-documentation/filters/additional-filters#date).
 
 Now as far as I'm concerned my HTML is complete! (for now). So onwards to the CSS and the styling, there's nothing *different* here, it's just standard css like you'd use on any other page. *One thing to note*: Because both my column lists are using the `float:` CSS attribute they won't affect the height of my wrapper or container and as such will run into my footer. I'll fix this by adding `overflow: auto` to my wrapper.
 
