@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Welcome to my Blog
+category: rambleramble
 ---
 
 Hi there and welcome. 

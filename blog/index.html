@@ -2,11 +2,36 @@
 layout: page
 title: Blog
 ---
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }} - {{ post.date }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="blog-wrapper">
+    <div class="container">
+    
+        <div class="b-column">
+            
+            <h2>Ramblings about development</h2>
+            <ul>
+                {% for post in site.categories.devramble %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <p>{{ post.date | date: '%d %B, %Y' }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        
+        </div>
+    
+        <div class="b-column">
+            
+            <h2>Ramblings about life, the universe and everything</h2>
+            <ul>
+                {% for post in site.categories.rambleramble %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <p>{{ post.date | date: '%d %B, %Y' }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+    
+        </div>
+    
+    </div>
+</div>

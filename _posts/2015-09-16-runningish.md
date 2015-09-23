@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: We're up and running!(ish)
+category: rambleramble
 ---
 
 So the site is up and running! This is actually the second personal site I've assembled, the first was just a basic HTML / CSS thing that is going to live in the depths of my hard drive for ever, no way in hell is that ugly monstrosity coming out to play (imagine combining child with crayon + 90s web designer + pile of puke on the page).
