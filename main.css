@@ -18,6 +18,28 @@ body {
     padding: 0 10px;
 }
 
+/* formatting for carousels */
+
+.carousel {
+    width: 980px; 
+    height: 735px; 
+    position: relative; /* let's me use position: absolute in the .slide formatting */
+    overflow: hidden; /* stops any overflowing content I may accidentally insert from appearing and ruining my page, also will work as a clearfix (I think) */
+}
+
+.slide {
+    display: none; /* does what it says on the tin, ensures all the slides are hidden on DOM load */
+    position: absolute; /* this line and onwards for .slide ensure the item fills the .carousel container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    height: 100%; /* will ensure all images are resized to the container, landscape will fit perfectly, portrait will have blank space either side */
+}
+
 /* _includes/footer.html formatting */
 
 .footer {
