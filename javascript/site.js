@@ -15,4 +15,10 @@ $(document).ready(function () {
         nextSlide.fadeIn(400).addClass("visible-slide");
 
     }, 8000);
+    
+    $('a[href*=#]').click(function (event) {
+        $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top}, 600);
+        event.preventDefault();
+    });
+    
 });
