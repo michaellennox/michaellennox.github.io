@@ -73,7 +73,7 @@ $(document).ready(function () {
 });
 {% endhighlight %}
 
-Now we need to work out how far we need to scroll. For that we can select the target location with `$($(this).attr('href'))` and calculate how far it is `.offset()` to the top of page.
+Now we need to work out how far we need to scroll from the top. For that we can select the target location with `$($(this).attr('href'))` and calculate how far it is `.offset()` to the top of page.
 
 {% highlight javascript %}
 $(document).ready(function () {

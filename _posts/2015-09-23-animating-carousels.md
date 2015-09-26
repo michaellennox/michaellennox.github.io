@@ -32,7 +32,7 @@ Let's set up my CSS, the carousel should be a fixed size box and each image shou
     width: 980px; 
     height: 735px; 
     position: relative; /* let's me use position: absolute in the .slide formatting */
-    overflow: hidden; /* stops any overflowing content I may accidentally insert from appearing and ruining my page, also will work as a clearfix (I think) */
+    overflow: hidden; 
 }
 
 .slide {
