@@ -4,7 +4,7 @@ title: GA Admission Site
 category: devramble
 ---
 
-This site can be found at [here]({{ site.baseurl }}/GA)
+This site can be found [here]({{ site.baseurl }}/GA) and the repo is available [here](https://github.com/michaellennox/michaellennox.github.io/tree/master/GA).
 
 So for this project I had to write a basic website for my GA admissions process. I decided beforehand I wanted to practice a few things which I haven't yet done in a project, in particular:
 
