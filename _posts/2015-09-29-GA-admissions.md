@@ -4,6 +4,8 @@ title: GA Admission Site
 category: devramble
 ---
 
+This site can be found at [here]({{ site.baseurl }}/GA)
+
 So for this project I had to write a basic website for my GA admissions process. I decided beforehand I wanted to practice a few things which I haven't yet done in a project, in particular:
 
 - Use a front-end framework. This will be the first project I nab one on and I'm going with bootstrap.

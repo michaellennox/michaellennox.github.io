@@ -1,0 +1,134 @@
+---
+---
+
+/* general formatting */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h1 small {
+    text-transform: none;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.container-fluid {
+    margin-bottom: 40px;
+}
+
+header {
+    margin-top: 50px;
+}
+
+.landing {
+    background-color: #D0EAFF;
+    padding-bottom: 50px;
+}
+
+.hey {
+    margin-bottom: 40px;
+}
+
+.hey h1 {
+    font-size: 70px;
+    font-weight: 900;
+    color: #E4001B;
+    letter-spacing: 8px;
+}
+
+.btn-primary {
+    background-color: #D0EAFF;
+    color: #606060;
+}
+
+.features .glyphicon {
+    font-size: 28px;
+}
+
+.details h2 {
+    margin-top: 5px;
+}
+
+.building, .about, .contact {
+    display: none;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact .glyphicon {
+    font-size: 24px;
+}
+
+.topify {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* CSS for my flip logo */
+
+.flipper { 
+    width: 225px;
+    height: 225px; /* 225x225 should work nicely on all displays */
+    position: relative;
+    perspective: 1000px; /* this gives it the 3d space */
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    margin: 0 auto; /* center it */
+}
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d; /* pass .flipper's 3d space onwards to .flip-card's children */
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transition: transform 1s; /* how long the animation takes */
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+
+.flip-card img {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.flip-back {
+    transform: rotateY(180deg); /* starts out hidden */
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+.flip-card.flipped {
+    transform: rotateY( 180deg ); /* will rotate the card around the Y axis when .flip card gets the .flipped class assigned via JS */
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+/* Building animation delays for the CSS transitions */
+
+.hold2 { animation-delay: 2s; -moz-animation-delay: 2s; -webkit-animation-delay: 2s; }
+.hold4 { animation-delay: 4s; -moz-animation-delay: 4s; -webkit-animation-delay: 4s; }
+.hold45 { animation-delay: 4.5s; -moz-animation-delay: 4.5s; -webkit-animation-delay: 4.5s; }
+.hold6 { animation-delay: 6s; -moz-animation-delay: 6s; -webkit-animation-delay: 6s; }
+
+/* */

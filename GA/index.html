@@ -1,0 +1,482 @@
+---
+---
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Michael Lennox | General Assembly Application</title>
+    
+    <!-- Bootstrap from CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- animate.css from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- CSS for pygments highlighting -->
+    <link rel="stylesheet" href="css/pygments-styling.css">
+
+</head>
+
+<body>
+    <i class="glyphicon glyphicon-chevron-up topify"></i>
+    
+    <div class="container-fluid text-center landing">
+            
+        <header class="row">
+            
+            <div class="hey col-sm-8 col-sm-offset-2 col-xs-12">
+                
+                <h1>Hey</h1>
+            
+            </div>
+            
+            <div class="col-sm-3 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                
+                <div class="flipper">
+                    <div class="flip-card">
+                        <img class="flip-front" src="images/GA-logo.png" alt="GA-logo"> <!-- GA logo -->
+                        <img class="flip-back" src="images/GA-face.png" alt="My-face"> <!-- My pretty face -->
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1 well animated fadeIn">
+                <h1><span class="animated bounceInRight hold2">I'm Michael</span><br><small class="animated bounceInUp hold4">and this is my application to the join the WDI Cohort for November 2015</small></h1>
+                <button type="button" class="welcome btn-lg btn-primary animated bounceInUp hold45">Welcome</button>
+            </div>
+            
+        </header>
+        
+    </div>
+    
+    <div class="container">
+        <div class="row text-center features">
+
+            <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <div class="well animated bounceInUp hold6">
+                    <i class="glyphicon glyphicon-home"></i>
+                    <h3>About Me<br><small>Here's a short bio about myself. Please forgive my complete inability to write about anything interesting.</small></h3>
+                    <button type="button" class="abouttrig btn btn-primary">About</button>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-xs-6">
+                <div class="well animated bounceInUp hold6">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                    <h3>Building This Site<br><small>There's a quite long blog post on how I assembled this site if you're interested.</small></h3>
+                    <button type="button" class="buildingtrig btn btn-primary">Building</button>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-xs-6">
+                <div class="well animated bounceInUp hold6">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                    <h3>Contact Me<br><small>Feel free to get in touch, my details are inside!</small></h3>
+                    <button type="button" class="contacttrig btn btn-primary">Contact</button>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="row details">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                
+                <div class="building well">
+
+                <!-- Content on how I built this goes here, hidden on load -->
+                   <p>So for this project I had to write a basic website for my GA admissions process. I decided beforehand I wanted to practice a few things which I haven’t yet done in a project, in particular:</p>
+
+<ul>
+  <li>Use a front-end framework. This will be the first project I nab one on and I’m going with bootstrap.</li>
+  <li>Build a set of jQuery animations chained together to animate all visible content on page load (scrapped this, just decided to throw lots of CSS animations in)</li>
+  <li>Start using some CSS3 animations to make things happen with a bit more <em>va-va-voom</em>.</li>
+</ul>
+
+<p>This blog post is likely to be a very long one and I’m going to be going through pretty much everything I did step by step. Will anyone ever find such a long and boring ramble useful? Who knows.</p>
+
+<p>So first of all, sketch my design, work out animation order &amp; general structure (as you’ll probably notice though, the landing structure changes about halfway through).</p>
+
+<p>Now time to go learn bootstrap!</p>
+
+<p>Bootstrap resources:</p>
+
+<ul>
+  <li><a href="https://www.codeschool.com/courses/blasting-off-with-bootstrap">CodeSchool (a pretty solid course)</a></li>
+  <li><a href="http://getbootstrap.com/getting-started/">The Docs (well duh)</a></li>
+  <li><a href="https://www.codecademy.com/en/skills/make-a-website/topics/bootstrap-components">CodeAcademy (a fairly short intro)</a></li>
+  <li><a href="http://www.w3schools.com/bootstrap/default.asp">W3 Schools (awesome as always)</a></li>
+</ul>
+
+<p>I’m only planning to integrate the basics, but it should make the styling of the page much faster, more consistant and improve my control over layout.</p>
+
+<p>A few hours later, I know the basics of bootstrap, let’s build my basic HTML doc structure and incorporate Bootstrap, jQuery and my own css/JS assets.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content=</span><span class="s">&quot;IE=edge&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;title&gt;</span>Michael Lennox | General Assembly Application<span class="nt">&lt;/title&gt;</span>
+    
+    <span class="c">&lt;!-- Bootstrap from CDN --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Font --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;https://fonts.googleapis.com/css?family=Montserrat:400,700&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- My CSS --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/main.css&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- CSS for pygments highlighting --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/pygments-styling.css&quot;</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+
+    <span class="nt">&lt;header&gt;</span>
+        <span class="c">&lt;!-- Set of jQuery functions will slowly bring all the &lt;header&gt; in on load --&gt;</span>
+        
+        <span class="nt">&lt;h1&gt;</span>Hi,<span class="nt">&lt;/h1&gt;</span>
+        
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;flipper&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;flip-card&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;flip-front&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- GA logo --&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;flip-back&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- My pretty face --&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    
+        <span class="nt">&lt;h1&gt;</span>I&#39;m Michael<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;h2&gt;</span>and this is my application to General Assembly<span class="nt">&lt;/h2&gt;</span>
+        
+        <span class="nt">&lt;nav&gt;</span>
+        
+        <span class="nt">&lt;button&gt;</span>Building This<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button&gt;</span>About Me<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button&gt;</span>Contact Me<span class="nt">&lt;/button&gt;</span>
+        
+        <span class="nt">&lt;/nav&gt;</span>
+        
+    <span class="nt">&lt;/header&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;building&quot;</span><span class="nt">&gt;</span>
+    
+    <span class="c">&lt;!-- Content on how I built this goes here, hidden on load --&gt;</span>
+        
+    <span class="nt">&lt;/div&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;about&quot;</span><span class="nt">&gt;</span>
+    
+    <span class="c">&lt;!-- Here&#39;s my about me, I may have just grabbed what I wrote on my blog.... Hidden on load --&gt;</span>
+    
+    <span class="nt">&lt;/div&gt;</span>
+    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;contact&quot;</span><span class="nt">&gt;</span>
+    
+    <span class="c">&lt;!-- Oh look, my email, number and link to my site! You guessed it, this is hidden on load too! --&gt;</span>
+        
+    <span class="nt">&lt;/div&gt;</span>
+    
+    <span class="c">&lt;!--jQuery from CDN--&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="c">&lt;!--Javascript for bootstrap from CDN--&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="c">&lt;!--My JavaScript--&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;javascript/site.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+    
+<span class="nt">&lt;/body&gt;</span></code></pre></div>
+
+<p>Now it’s time for me to add the bootstrap grids, typography and buttons to create the basic formatting as per my design.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+            
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row text-center&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-sm-8 col-sm-offset-2 col-xs-12&quot;</span><span class="nt">&gt;</span>
+
+                <span class="nt">&lt;h1&gt;</span>Hi<span class="nt">&lt;/h1&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;flipper&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;flip-card&quot;</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;flip-front&quot;</span> <span class="na">src=</span><span class="s">&quot;images/GA-logo.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;GA-logo&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- GA logo --&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;flip-back&quot;</span> <span class="na">src=</span><span class="s">&quot;images/GA-face.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;My-face&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- My pretty face --&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;h1&gt;</span>I&#39;m Michael<span class="nt">&lt;br&gt;&lt;small&gt;</span>and this is my application to the join the WDI Cohort for November 2015<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row text-center features&quot;</span><span class="nt">&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;well&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-home&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+                    <span class="nt">&lt;h3&gt;</span>About Me<span class="nt">&lt;br&gt;&lt;small&gt;</span>Here&#39;s a short bio about myself. Please forgive my complete inability to write about anything interesting.<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-info&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-sm-4 col-xs-6&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;well&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-pencil&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+                    <span class="nt">&lt;h3&gt;</span>Building This Site<span class="nt">&lt;br&gt;&lt;small&gt;</span>There&#39;s a quite long blog post on how I assembled this site if you&#39;re interested.<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-info&quot;</span><span class="nt">&gt;</span>Building<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-sm-4 col-xs-6&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;well&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-envelope&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+                    <span class="nt">&lt;h3&gt;</span>Contact Me<span class="nt">&lt;br&gt;&lt;small&gt;</span>Feel free to get in touch, my details are inside!<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-info&quot;</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;/div&gt;</span>
+        
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12&quot;</span><span class="nt">&gt;</span>
+                
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;building well&quot;</span><span class="nt">&gt;</span>
+
+                <span class="c">&lt;!-- Content on how I built this goes here, hidden on load --&gt;</span>
+                    
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;about well&quot;</span><span class="nt">&gt;</span>
+
+                <span class="c">&lt;!-- Here&#39;s my about me, I may have just grabbed what I wrote on my blog.... Hidden on load --&gt;</span>
+                    
+                <span class="nt">&lt;/div&gt;</span>
+
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;contact well&quot;</span><span class="nt">&gt;</span>
+
+                <span class="c">&lt;!-- Oh look, my email, number and link to my site! You guessed it, this is hidden on load too! --&gt;</span>
+
+                <span class="nt">&lt;/div&gt;</span>
+                
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        
+    <span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p>The set up works for mobile, tablet and normal screens right now. I’ll have a peak at it on the 1440p monitor later to see whether or not it may need some additional formatting for very large ones.</p>
+
+<p>So that’s the basic framework for my site complete and I must say it took a hell of a lot less time to get running than me writing my own CSS to build each grid element, not to mention that it looks like it functions much better at smaller screen sizes than I could likely do myself.</p>
+
+<p>Now it’s time to start making interesting things happen! So first of all, let’s make the GA icon a CSS flipper to turn into my head. I want this segment to do start as on GA, it get’s flipped in initialization and then also you can flip it back manually by clicking. Most of the inspiration for this comes from <a href="https://desandro.github.io/3dtransforms/">David DeSandro’s fantastic intro to 3D CSS animations</a></p>
+
+<p>The HTML structure I’ve already written out:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;flipper&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;flip-card&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;flip-front&quot;</span> <span class="na">src=</span><span class="s">&quot;images/GA-logo.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;GA-logo&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- GA logo --&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;flip-back&quot;</span> <span class="na">src=</span><span class="s">&quot;images/GA-face.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;My-face&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- My pretty face --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p>Should be good to go. Now let’s add some CSS styling to this:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.flipper</span> <span class="p">{</span> 
+    <span class="k">width</span><span class="o">:</span> <span class="m">225px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">225px</span><span class="p">;</span> <span class="c">/* 225x225 should work nicely on all displays */</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="n">perspective</span><span class="o">:</span> <span class="m">1000px</span><span class="p">;</span> <span class="c">/* this gives it the 3d space */</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">perspective</span><span class="o">:</span> <span class="m">1000px</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">perspective</span><span class="o">:</span> <span class="m">1000px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span> <span class="c">/* center it */</span>
+<span class="p">}</span>
+
+<span class="nc">.flip-card</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="n">transform</span><span class="o">-</span><span class="n">style</span><span class="o">:</span> <span class="n">preserve</span><span class="m">-3</span><span class="n">d</span><span class="p">;</span> <span class="c">/* pass .flipper&#39;s 3d space onwards to .flip-card&#39;s children */</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">style</span><span class="o">:</span> <span class="n">preserve</span><span class="m">-3</span><span class="n">d</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">style</span><span class="o">:</span> <span class="n">preserve</span><span class="m">-3</span><span class="n">d</span><span class="p">;</span>
+    <span class="n">transition</span><span class="o">:</span> <span class="n">transform</span> <span class="m">1s</span><span class="p">;</span> <span class="c">/* how long the animation takes */</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">transform</span> <span class="m">1s</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">transform</span> <span class="m">1s</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">transform</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.flip-card</span> <span class="nt">img</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="n">backface</span><span class="o">-</span><span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">backface</span><span class="o">-</span><span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">backface</span><span class="o">-</span><span class="k">visibility</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.flip-back</span> <span class="p">{</span>
+    <span class="n">transform</span><span class="o">:</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">180</span><span class="n">deg</span><span class="p">);</span> <span class="c">/* starts out hidden */</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">180</span><span class="n">deg</span><span class="p">);</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">180</span><span class="n">deg</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.flip-card.flipped</span> <span class="p">{</span>
+    <span class="n">transform</span><span class="o">:</span> <span class="n">rotateY</span><span class="p">(</span> <span class="m">180</span><span class="n">deg</span> <span class="p">);</span> <span class="c">/* will rotate the card around the Y axis when .flip card gets the .flipped class assigned via JS */</span>
+    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">180</span><span class="n">deg</span><span class="p">);</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">180</span><span class="n">deg</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+
+<p>When the document loads the card will appear as the GA logo, then as part of the loading animations it will be assigned .flipped. I also want people to be able to flip it themselves with a simple click:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.flipper&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="s2">&quot;.flip-card&quot;</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s2">&quot;flipped&quot;</span><span class="p">).</span><span class="nx">mouseleave</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;flipped&quot;</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span></code></pre></div>
+
+<p>Now let’s create a set of animations to apply to the page when it loads, I’ll be using a combination of jQuery, the <a href="https://github.com/daneden/animate.css">animate.css</a> stylesheet and some custom animation delays (CSS).</p>
+
+<p>First let’s add .flipped to that above GA logo 2 seconds after the page loads.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.flip-card&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;flipped&quot;</span><span class="p">);</span>
+<span class="p">},</span> <span class="mi">2000</span><span class="p">);</span></code></pre></div>
+
+<p>Now let’s start making use of animate.css to bring things into view. First of all I’m going to define a number of “hold” animation delays so I can apply the animations in a set order.</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/* Building animation delays for the CSS transitions */</span>
+
+<span class="nc">.hold2</span> <span class="p">{</span> <span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">2s</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">2s</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">2s</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.hold4</span> <span class="p">{</span> <span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">4s</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">4s</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">4s</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.hold45</span> <span class="p">{</span> <span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">4.5s</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">4.5s</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">4.5s</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.hold6</span> <span class="p">{</span> <span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">6s</span><span class="p">;</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">6s</span><span class="p">;</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">animation</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">6s</span><span class="p">;</span> <span class="p">}</span></code></pre></div>
+
+<p>Now I use the animate css library and the transition delays I’ve just defined to animate my landing page. Incorporating an animation is easy, I add three classes - animated, <a href="http://daneden.github.io/animate.css/">theAnimationName</a> and the animation delay I wish to use as defined above. Look at the examples below</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1 well animated fadeIn&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!--- This will make a fadeIn immediately --&gt;</span>
+    <span class="nt">&lt;h1&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;animated bounceInRight hold2&quot;</span><span class="nt">&gt;</span>I&#39;m Michael<span class="nt">&lt;/span&gt;&lt;br&gt;&lt;small</span> <span class="na">class=</span><span class="s">&quot;animated bounceInUp hold4&quot;</span><span class="nt">&gt;</span>and this is my application to the join the WDI Cohort for November 2015<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;welcome btn-lg btn-primary animated bounceInUp hold45&quot;</span><span class="nt">&gt;</span>Welcome<span class="nt">&lt;/button&gt;</span> <span class="c">&lt;!--- This will make a bounceInUp after 4.5s --&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;well animated bounceInUp hold6&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!--- This will make a bounceInUp after 6s --&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-home&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;h3&gt;</span>About Me<span class="nt">&lt;br&gt;&lt;small&gt;</span>Here&#39;s a short bio about myself. Please forgive my complete inability to write about anything interesting.<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;abouttrig btn btn-info&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p>This brings in my elements section by section, and works nicely across all devices. Now onwards!</p>
+
+<p>Now I want to make my buttons work. So first of all that big welcome button in my landing section - I want that to scroll down to the features segment. Let’s add a <a href="http://www.michaellennox.me/devramble/2015/09/25/animating-anchor-scroll.html">jQuery function to trigger on click</a>.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.welcome&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;html, body&#39;</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span><span class="nx">scrollTop</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.features&#39;</span><span class="p">).</span><span class="nx">offset</span><span class="p">().</span><span class="nx">top</span><span class="p">},</span> <span class="mi">600</span><span class="p">);</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<span class="p">});</span></code></pre></div>
+
+<p>Now let’s write a function that I can trigger for the other buttons to make their relevant content fadeIn. I’ve given each of my buttons a class that relates to the content they trigger (abouttrig, buildingtrig, contacttrig).</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.abouttrig&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.activecontent&#39;</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mi">600</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">&#39;activeContent&#39;</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.about&#39;</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">(</span><span class="mi">600</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;activecontent&#39;</span><span class="p">);</span>
+    
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;html, body&#39;</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span><span class="nx">scrollTop</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.about&#39;</span><span class="p">).</span><span class="nx">offset</span><span class="p">().</span><span class="nx">top</span><span class="p">},</span> <span class="mi">600</span><span class="p">);</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<span class="p">});</span></code></pre></div>
+
+<p>Because the content of the page may get pretty long, I’ll position a glyphicon to the right of the screen which boots you back up to the top on click.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;glyphicon glyphicon-chevron-up topify&quot;</span><span class="nt">&gt;&lt;/i&gt;</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.topify</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">right</span><span class="o">:</span> <span class="m">40px</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">24px</span><span class="p">;</span>
+    <span class="k">cursor</span><span class="o">:</span> <span class="k">pointer</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">$(</span><span class="s1">&#39;.topify&#39;</span><span class="o">)</span><span class="nc">.click</span><span class="o">(</span><span class="nt">function</span> <span class="o">(</span><span class="nt">event</span><span class="o">)</span> <span class="p">{</span>
+    <span class="err">$</span><span class="p">(</span><span class="s1">&#39;html, body&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">animate</span><span class="p">(</span><span class="err">{</span><span class="n">scrollTop</span><span class="o">:</span> <span class="m">0</span><span class="p">}</span><span class="o">,</span> <span class="nt">600</span><span class="o">);</span>
+    <span class="nt">event</span><span class="nc">.preventDefault</span><span class="o">();</span>
+<span class="err">}</span><span class="o">);</span></code></pre></div>
+
+<p>So let’s insert the final bits of content. The about.me is shamelessly pulled from what I have on my main site, the building blog is being built using Jekyll, pygments, liquid and markdown so I can get those pretty code snippets (and replicate this post on my main blog) and my contact me is a fairly simple contact page with nested columns!</p>
+
+<p>And that’s it. If I spent some further time on this I think it’d be focused around further customisation of the main content sections and turning that topify button into an actual scrolling nav bar. Also I’m pretty certain the JS could be cleaned up quite a bit more.</p>
+                    
+                </div>
+
+                <div class="about well">
+
+                <!-- Here's my about me, I may have just grabbed what I wrote on my blog.... Hidden on load -->
+                    <h2>Hi, I'm Michael and I'm currently working on becoming a web developer.</h2>
+            
+                    <p>Right now I'm developing my skills in the basics: learning Ruby, HTML, CSS and JavaScript.</p>
+                    <p>As a person - I'm highly curious and love learning new things. My dream is to work in a role which let's me discover something new every day.</p>
+
+                    <h3>Professional Background</h3>
+
+                    <p>Born and bred in Yorkshire, I traded the beautiful dales for London's urban sprawl to study Medicine at UCL. 18 months in, I came to the realisation that a life in the medical field wasn't for me and jumped into the working world</p>
+                    <p>After leaving Medicine I entered a career in sales, first working as a team lead in a survey/sales role for a couple of the major energy firms and then taking up a Technical Recruitment role for the fantastic Explore Group - a mid-sized agency focused on the London market.</p>
+                    <p>While at the Explore Group, I ran one of our open source language desks focused on the python community and had the priviledge of working with a wide variety of London's greatest names in technology. It truly opened my eyes to how remarkable the tech community in London is and ignited a keen desire to get into a position where instead of helping from the sidelines, I could become intimately involved.</p>
+                    <p>After nearly 4 years of doing fairly well I'd managed to save up a sizeable chunk of money to tide me over and made the decision to pursue something that truly interested me.</p>
+                    <em>So here I am.</em>
+
+                    <h3>A Little About Me</h3>
+
+                    <p>Outside of work I'm your fairly standard "geeky" guy - my particular passions include: fantasy novels (far too many), music (performance), computers (athough that doesn't mean I can actually <i>do computers</i>), travel (anywhere's got nicer weather than England), DIY (the discovery of which confused everyone who ever knew me) and food (although I've no clue where it goes). In addition to this I enjoy continuous learning and have been studying various modules with the Open University (mostly mathematics, I'm weird like that).</p>
+                  
+                </div>
+
+                <div class="contact well">
+
+                <!-- Oh look, my email, number and link to my site! You guessed it, this is hidden on load too! -->
+                    <div class="row">
+                        
+                        <div class="col-sm-4 col-sm-offset-1 col-xs-6">
+                            <i class='glyphicon glyphicon-envelope'></i>
+                            <h4><a href="mailto:hello@michaellennox.me">hello@michaellennox.me</a></h4>
+                        </div>
+                        
+                        <div class="col-sm-4 col-sm-offset-1 col-xs-6">
+                            <i class='glyphicon glyphicon-phone'></i>
+                            <h4>07703384126</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-sm-4 col-sm-offset-1 col-xs-6">
+                            <i class='glyphicon glyphicon-globe'></i>
+                            <h4><a href="www.michaellennox.me">michaellennox.me</a></h4>
+                        </div>
+                        
+                        <div class="col-sm-4 col-sm-offset-1 col-xs-6">
+                            <i class='glyphicon glyphicon-file'></i>
+                            <h4><a href="https://github.com/michaellennox/michaellennox.github.io">Github</a></h4>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <!--jQuery from CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--Javascript for bootstrap from CDN-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--My JavaScript-->
+    <script src="javascript/site.js"></script>
+    
+</body>
+    
