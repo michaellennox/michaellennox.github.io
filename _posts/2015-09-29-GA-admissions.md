@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: GA Admission Site
+title: GA Admission Site - Bootstrap & CSS Animations
 category: devramble
 ---
 
