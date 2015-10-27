@@ -47,5 +47,5 @@ Well that was hard.
 
 ### 4. Enjoy your pretty data
 
-- Enjoy the pretty information that will start appearing on your account at [analytics.google.com](analytics.google.com). 
+- Enjoy the pretty information that will start appearing on your account at [analytics.google.com](analytics.google.com) - note, takes a few hours to detect and start going.
 - The information seems fairly intuitive to look around (for the basics), if you fancy finding out how to use it in a better way I'm sure there's a million tutorials out there. Let me know if you find something nice.
