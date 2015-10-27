@@ -145,14 +145,14 @@ nav {
     background-size: cover;
 }
 
-.main {
+.landing-content {
     position: relative;
     top: 35vh;
     text-align: center;
     text-transform: uppercase;
 }
 
-.main h1 {
+.landing-content h1 {
     font-weight: bold;
     font-size: 80px;
     margin-top: 0;
@@ -160,14 +160,14 @@ nav {
     color: #d9411e;
 }
 
-.main p {
+.landing-content p {
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 50px;
     color: #fff;
 }
 
-.main-btn {
+.main-button {
     padding: 10px 25px;
     font-weight: 550;
     font-size: 18px;
@@ -177,22 +177,21 @@ nav {
     border: 1px solid #fff;
 }
 
-.secondary {
-    padding-top: 80px;
-    color: #333;
+.main-button:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
-.column {
-    float: left;
-    width: 50%;
+.secondary {
     text-align: center;
-    margin-bottom: 50px;
+    margin-top: 25px;
 }
 
 .secondary h2 {
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .secondary p {
@@ -216,13 +215,7 @@ nav {
 .secondary-btn:hover {
     color: #633;
     border: 1px solid #633;
-}
-
-.col-3 {
-    float: left;
-    width: 33%;
-    text-align: center;
-    margin-bottom: 50px;
+    text-decoration: none;
 }
 
 /* blog/index.html formatting */
