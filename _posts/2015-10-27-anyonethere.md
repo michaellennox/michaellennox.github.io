@@ -43,7 +43,7 @@ Well that was hard.
 
 - Create a file for the tracking in your _includes directory, I called mine analytics.html. Copy paste the above code snippet into it.
 - Insert this into every page on your site just before you close the `<head>` tag using {% raw %}{% include filenameyousavedasabove.html %}{%endraw%} - eg for me {%raw%}{% include analytics.html %}{%endraw%}. For this site I have a head.html containg my `<head></head>` in my _includes which is included in all pages on my site.
-- Build and deploy
+- Build and deploy (as you're using Jekyll I assume you know how to do this)
 
 ### 4. Enjoy your pretty data
 
