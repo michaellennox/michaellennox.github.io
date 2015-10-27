@@ -12,12 +12,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
 .clear {
     clear: both;
 }
@@ -46,7 +40,7 @@ body {
 
 /* _includes/footer.html formatting */
 
-.footer {
+footer {
     background-color: #ffd452;
     color: #fff; 
     padding: 15px;
@@ -96,13 +90,13 @@ body {
     color: #fff;
     font-style: italic;
     text-align: right;
-    margin: 0;
+    margin: 10px 0 0 0;
     padding: 0;
 }
 
 /* _includes/nav.html formatting */
 
-.nav {
+nav {
     background-color: #ffd452;
     color: #fff; 
     padding-bottom: 6px;
@@ -112,13 +106,12 @@ body {
 
 .name {
     padding-top: 10px;
-    margin-top: 0;
-    text-align: right;
+    margin-top: 10px;
     font-size: 12px;
 }
 
 .nav-bar {
-    text-align: right;
+    margin-top: 10px;
 }
 
 .nav-bar li {
@@ -132,7 +125,7 @@ body {
     text-decoration: none;
     border-bottom: 1px solid #fff;
     color: #fff;
-    margin-left: 30px;
+    margin: 0px 15px;
 }
 
 .nav-bar a:hover {
@@ -232,75 +225,33 @@ body {
     margin-bottom: 50px;
 }
 
-/* about/index.html formatting */
-
-.wrapper-about {
-    padding-top: 40px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
-}
-
-.content-about {}
-
-.content-about h1 {
-    font-size: 48px;
-    margin-bottom: 30px;
-    font-weight: bold;
-}
-
-.content-about h2 {
-    font-weight: bold;
-    font-size: 32px;
-    margin: 60px 0 30px;
-}
-
-.content-about p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.content-about em {
-    font-size: 24px;
-    font-weight: bold;
-}
-
 /* blog/index.html formatting */
 
-.blog-wrapper {
-    padding-top: 40px;
-    overflow: auto;
-}
-
-.b-column {
-    float: left;
-    width: 50%;
+.blog-topic {
     text-align: center;
 }
 
-.b-column h2 {
-    font-size: 28px;
+.blog-topic h2 {
     min-height: 62px;
+    margin-top: 35px;
+    margin-bottom: 25px;
 }
 
-.b-column li {
-    margin-bottom: 10px;
+.blog-topic li {
     list-style: none;
 }
 
-.b-column a {
+.blog-topic a {
     text-decoration: none;
     color: #000;
-    margin-bottom: 2px;
     font-size: 18px;
 }
 
-.b-column a:hover {
+.blog-topic a:hover {
     color: #d9411e;
 }
 
-.b-column p {
-    margin: 0;
-    padding: 0;
+.blog-topic p {
     font-size: 12px;
     color: #ffd452;
 }
