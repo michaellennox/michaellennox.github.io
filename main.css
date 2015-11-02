@@ -250,10 +250,6 @@ nav {
 }
 
 @media (max-width: 800px) {
-    
-.landing-content {
-    top: 15vh;
-}
 
 .landing-content h1 {
     font-size: 40px;
