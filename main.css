@@ -249,20 +249,49 @@ nav {
     color: #ffd452;
 }
 
-@media (max-width: 800px) {
+/* blog-sidebar formatting */
 
-.landing-content h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
+.blog-sidebar {
+    text-align: center;
 }
 
-.landing-content p {
-    font-size: 15px;
-    margin-bottom: 25px;
+
+.blog-sidebar li {
+    list-style: none;
 }
 
-.main-button {
+.blog-sidebar a {
+    text-decoration: none;
+    color: #000;
     font-size: 12px;
 }
+
+.blog-sidebar a:hover {
+    color: #d9411e;
+}
+
+.blog-sidebar p {
+    font-size: 9px;
+    color: #ffd452;
+}
+
+
+/* media queries front page */
+
+@media (max-width: 800px) {
+
+    .landing-content h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .landing-content p {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .main-button {
+        font-size: 12px;
+    }
 
 }

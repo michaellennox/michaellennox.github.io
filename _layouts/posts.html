@@ -4,9 +4,9 @@ layout: default
 
 {% include nav.html %}
 
-<article class="container">
-        
-    <div class="col-md-8 col-md-offset-2 col-xs-12">
+<main class="container">
+    <div class="row">
+    <article class="col-md-8 col-xs-12">
         
         <h1>{{ page.title }}</h1>
         <h3>{{ page.date | date: '%d %B, %Y'}}</h3>
@@ -15,6 +15,30 @@ layout: default
         
         <p>Well thanks for coming. I'm sure there will be more soon. In the mean time why don't you <a href="mailto:hello@michaellennox.me">get in touch</a> or <a href="http://www.michaellennox.me/feed.xml">subscribe to my feed</a>?</p>
 
+    </article>
+    
+    <article class="blog-sidebar col-md-3 col-md-offset-7 hidden-xs hidden-sm" style="position: fixed">
+
+    <h3>Further ramblings</h3>
+    <ul>
+        {% if page.category == 'devramble' %}
+            {% for post in site.categories.devramble %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <p>{{ post.date | date: '%d %B, %Y' }}</p>
+        </li>
+        {% endfor %}
+        {% else %}
+            {% for post in site.categories.rambleramble %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <p>{{ post.date | date: '%d %B, %Y' }}</p>
+        </li>
+        {% endfor %}
+        {% endif %}
+    </ul>
+
+    </article>
     </div>
     
-</article>
+</main>
