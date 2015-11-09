@@ -16,6 +16,10 @@ body {
     clear: both;
 }
 
+ul {
+    padding: 0;
+}
+
 /* formatting for carousels */
 
 .carousel {
