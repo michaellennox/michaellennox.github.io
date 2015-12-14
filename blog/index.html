@@ -4,32 +4,28 @@ title: Blog
 ---
 <main class="container">
 
-    <article class="blog-topic col-md-6 col-sm-12">
+  <article class="blog-topic col-md-6 col-sm-12">
+    <h2>Ramblings about development</h2>
+    <ul>
+      {% for post in site.categories.devramble %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.date | date: '%d %B, %Y' }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
 
-        <h2>Ramblings about development</h2>
-        <ul>
-            {% for post in site.categories.devramble %}
-            <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                <p>{{ post.date | date: '%d %B, %Y' }}</p>
-            </li>
-            {% endfor %}
-        </ul>
-
-    </article>
-
-    <article class="blog-topic col-md-6 col-sm-12">
-
-        <h2>Ramblings about life, the universe and everything</h2>
-        <ul>
-            {% for post in site.categories.rambleramble %}
-            <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                <p>{{ post.date | date: '%d %B, %Y' }}</p>
-            </li>
-            {% endfor %}
-        </ul>
-
-    </article>
-
+  <article class="blog-topic col-md-6 col-sm-12">
+    <h2>Ramblings about life, the universe and everything</h2>
+    <ul>
+      {% for post in site.categories.rambleramble %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.date | date: '%d %B, %Y' }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+  
 </main>

@@ -2,3 +2,19 @@
 layout: blog_page
 title: Blog
 ---
+
+<main class="container">
+
+  <article class="blog-topic col-md-6 col-md-offset-3 col-sm-12">
+    <h2>Ramblings about painting</h2>
+    <ul>
+      {% for post in site.tags.painting %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.date | date: '%d %B, %Y' }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+
+</main>

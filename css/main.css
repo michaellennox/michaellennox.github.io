@@ -153,6 +153,7 @@ footer {
   text-decoration: none;
   color: #fff;
   border-bottom: 1px solid #fff;
+  line-height: 45px;
 }
 
 .blogmain-content a:hover {
