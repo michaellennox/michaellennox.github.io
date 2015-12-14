@@ -101,13 +101,19 @@ footer {
 /* _includes/blog_head.html formatting */
 
 .blogmain {
-  height: 45vh;
+  height: 35vh;
   background: linear-gradient(
     rgba(51, 51, 51, 0.7),
     rgba(51, 51, 51, 0.7)
   ),
   url({{ site.baseurl }}/images/laptop%20background.jpg) center center no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 800px){
+  .blogmain {
+    height: 85vh;
+  }
 }
 
 .blogmain-content {
@@ -311,9 +317,19 @@ nav {
   color: #d9411e;
 }
 
-.blog-topic p {
+.time-date {
   font-size: 12px;
   color: #ffd452;
+}
+
+.excerpt {
+  margin-bottom: 50px;
+}
+
+.excerpt a {
+  pointer-events: none;
+  cursor: default;
+  font-size: 14px;
 }
 
 /* blog-sidebar formatting */
