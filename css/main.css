@@ -358,6 +358,9 @@ nav {
   color: #ffd452;
 }
 
+.blog-article-body img {
+  max-width: 100%;
+}
 
 /* media queries front page */
 
