@@ -2,6 +2,7 @@
 layout: posts
 title: Makers Week 1 - One down, 11 to go
 category: rambleramble
+tag: makers
 ---
 
 So it's happened.... we've completed the first week at Makers! _YAY_

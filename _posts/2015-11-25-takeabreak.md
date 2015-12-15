@@ -2,6 +2,7 @@
 layout: posts
 title: Makers Week 1, Day 3 - Take a Break
 category: rambleramble
+tag: makers
 ---
 
 So here I am, writing a quick post at the start of Day 4 at Makers Academy about Day 3. Yesterday was a lot of fun, starting work on a new and different code base felt slightly weird but we quickly got to grips with the fast change, the day's work can be seen on my [giamir branch](https://github.com/michaellennox/boris-bikes/tree/giamir) of [this repo](https://github.com/michaellennox/boris-bikes).

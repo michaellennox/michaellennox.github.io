@@ -2,6 +2,7 @@
 layout: posts
 title: Makers Week 1, Day 2 - Lentils Suck
 category: rambleramble
+tag: makers
 ---
 
 So, I'm sitting here after the first day at makers. A couple glasses of a nice red down and crying inside because my lentils still aren't cooked in my stew 1 hour after I expected them to be! Turns out they take a while to cook... Dammit I'm hungry.

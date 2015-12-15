@@ -2,6 +2,7 @@
 layout: posts
 title: Makers Week 3, Day 3 - Sinatra Arrives
 category: rambleramble
+tag: makers
 ---
 
 So we've now started working on the web! While we haven't hit anything conceptually complex it makes a real difference in how we picture the apps and projects we are working on when they actually generate a UI on our screen instead of just being a

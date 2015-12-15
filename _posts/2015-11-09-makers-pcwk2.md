@@ -2,6 +2,7 @@
 layout: posts
 title: Makers Precourse Week 2 - Ruby, Ruby, Ruby, Ruby
 category: rambleramble
+tag: makers
 ---
 
 So our first week recovering Ruby as part of the precourse and it was a nice jump forwards. Topics for this week included a much deeper dive into Arrays and Methods and although most of the items were things I've had the opportunity to previously cover I picked up an enormous amount of new information which is floating around in my lovely head.
@@ -22,7 +23,7 @@ This was also my first time ever getting involved in pair programming, I had two
 ###Changes I Plan to Make Next Week:
 
 * Always write a set of tests before starting the main code. Test every single time I make a change.
-* Complete anki-style decks for Arrays and the numeric classes. 
+* Complete anki-style decks for Arrays and the numeric classes.
 * Don't just jump in right away, think about the structure before I start defining methods. Maybe write some pseudo-code so I know how everything will slot together before even writing any Ruby.
 
 All in all, I had a lot of fun this week, got a great introduction to working as a pair and am very much looking forwards to getting stuck into some deeper concepts next week!

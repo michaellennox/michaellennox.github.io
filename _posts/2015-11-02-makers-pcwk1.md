@@ -2,6 +2,7 @@
 layout: posts
 title: Makers Precourse Week 1 - The Command Line and Git
 category: rambleramble
+tag: makers
 ---
 
 So - we're now through the first week of the precourse at Makers (Hooray!) and I've had the opportunity to get my teeth stuck back into a more indepth dive into the command line and git, both subjects I have studied before but as it appears, had a million and one things more to learn! This week has been pretty intense - supposedly it's "meant" to be around 15-20 hours to study the materials for the precourse but I (and by the sounds of it most others) have dived into various side and optional materials which definitely increase the amount of time studying!

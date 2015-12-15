@@ -2,9 +2,10 @@
 layout: posts
 title: My First Makers Project - Motivational Posters!
 category: devramble
+tag: makers
 ---
 
-So it's time for the first Maker's project: [Motivational Posters!](https://github.com/michaellennox/build-a-website) 
+So it's time for the first Maker's project: [Motivational Posters!](https://github.com/michaellennox/build-a-website)
 
 The end result is visible on [heroku](http://posters.michaellennox.me/) and the repository is available on [github](https://github.com/michaellennox/motivational-posters).
 
@@ -207,10 +208,9 @@ $(document).on('click', '#search-results img', function() {
 
 I also applied a thin pink border to the selected image with the active image class `.activeimg {border: 2px solid #fccdd3;}`.
 
-There's a few final things I'm considering doing: 
+There's a few final things I'm considering doing:
 
 * The input fields and buttons aren't very nicely styled right now, they could do with some formatting
 * The backgrounds on each "page" are rather bland, but then again I'm really bad at thinking about how to design stuff
 
 But this pretty much wrapped up the project for now, the end result is visible on [heroku](http://posters.michaellennox.me/) and the repository is available on [github](https://github.com/michaellennox/motivational-posters).
-

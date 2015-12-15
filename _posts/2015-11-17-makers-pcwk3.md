@@ -2,6 +2,7 @@
 layout: posts
 title: Makers Precourse Week 3 - More Ruby
 category: rambleramble
+tag: makers
 ---
 
 So this week was a great chance to get to grips with the "rest" of the basic Ruby syntax. We burnt our way through some more stuff on classes, made a few hashes, started getting to grips with some procs and got exasperated by rspec results. Most of the week's work was based around the remainder of Chris Pine's book - you can see some of my solutions [here](https://github.com/michaellennox/learn_to_program).
@@ -10,7 +11,7 @@ All in all, a fairly smooth week, apart from a few moments of ripping your hair 
 
 ###Most Important Things I Learned:
 
-* The big steps this week came with depth of understanding and capacity to research. While we weren't introduced to many new topics (bar maybe procs) the remainder of Chris Pine was a lot more thought provoking and required you to extend your research to more than just the actual written materials. 
+* The big steps this week came with depth of understanding and capacity to research. While we weren't introduced to many new topics (bar maybe procs) the remainder of Chris Pine was a lot more thought provoking and required you to extend your research to more than just the actual written materials.
 * Actually getting a grip on reading error messages & understanding what RSpec was spitting out at me meant fixing any issues was a lot faster than in the previous week.
 
 ###Things I Struggled With The Most:

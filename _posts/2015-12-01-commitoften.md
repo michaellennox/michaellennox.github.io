@@ -2,6 +2,7 @@
 layout: posts
 title: Makers Week 2, Day 2 - Commit Often
 category: rambleramble
+tag: makers
 ---
 
 So, one of the big things we need to do is commit regularly which [I](https://github.com/michaellennox/oystercard/commits/master) [think](https://github.com/michaellennox/airport_challenge/commits/master) [I've](https://github.com/michaellennox/boris-bikes/commits/jamie) [been](https://github.com/michaellennox/oystercard/commits/andrew) [doing](https://github.com/michaellennox/boris-bikes/commits/jonathan) [fairly](https://github.com/michaellennox/boris-bikes/commits/master) [well](https://github.com/michaellennox/boris-bikes/commits/giamir), although I definitely need to work out a better way to structure my commit messages - _note to self, go go go!_
