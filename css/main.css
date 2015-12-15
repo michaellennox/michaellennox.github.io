@@ -336,6 +336,8 @@ nav {
 
 .blog-sidebar {
   text-align: center;
+  max-height: 100%;
+  overflow: scroll;
 }
 
 
