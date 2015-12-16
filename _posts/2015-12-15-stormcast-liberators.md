@@ -11,24 +11,24 @@ Warning in advance - all these pages in the painting section are going to be pre
 
 So here they are, my first couple of units in a good 10 (maybe even 15 years). Rather happy with them all in all and pleased I got back into painting - it's hugely therapeutic and relaxing for an exhausted mind. They still need basing but I'll get round to that as a single army.
 
-![10 Liberators](http://i.imgur.com/qSsEXNY.jpg)
+![10 Liberators](http://i.imgur.com/SqLvkbM.jpg)
 
-![1st Prime](http://i.imgur.com/4ZDAKZo.jpg)
+![1st Prime](http://i.imgur.com/prj282e.jpg)
 
-![1st Prime](http://i.imgur.com/YLAJQOe.jpg)
+![1st Prime](http://i.imgur.com/6HCZG7N.jpg)
 
-![1st Prime](http://i.imgur.com/YLAJQOe.jpg)
+![1st Prime](http://i.imgur.com/AqToDV5.jpg)
 
-![1st Prime](http://i.imgur.com/3C32IHy.jpg)
+![1st Prime](http://i.imgur.com/Yu6a0iD.jpg)
 
-![2nd Prime](http://i.imgur.com/3C32IHy.jpg)
+![2nd Prime](http://i.imgur.com/hLl5byM.jpg)
 
-![2nd Prime](http://i.imgur.com/3C32IHy.jpg)
+![2nd Prime](http://i.imgur.com/JUjAQGR.jpg)
 
-![2nd Prime](http://i.imgur.com/iWPf1f2.jpg)
+![2nd Prime](http://i.imgur.com/md0ZJSF.jpg)
 
-![2nd Prime](http://i.imgur.com/iWPf1f2.jpg)
+![2nd Prime](http://i.imgur.com/kRE8sHy.jpg)
 
-![5 Liberators](http://i.imgur.com/U99JJ9s.jpg)
+![5 Liberators](http://i.imgur.com/8tlYWC1.jpg)
 
-![5 Liberators](http://i.imgur.com/tgBuXQR.jpg)
+![5 Liberators](http://i.imgur.com/gKddhgw.jpg)
