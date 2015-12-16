@@ -13,4 +13,4 @@ One thing we learnt - don't use DROP TABLE on your prod database on Heroku.... m
 
 Getting our head around INNER JOINS was a little confusing at first but it's starting to make sense after a night of sleep, going over it again today should help reinforce it nicely. This was also the first day where I hit a bug that couldn't be solved by putting all my code in my head and just figuring it out, Ptolomy introduced us to [byebug](https://github.com/deivid-rodriguez/byebug), the use of which solved our issue very rapidly. [He also made a lovely video on using it here](https://www.youtube.com/watch?v=FbXBx44JdRk) which is well worth checking out.
 
-The codebase from Tuesday is available [here](https://github.com/michaellennox/bookmark_manager/tree/chris) and the heroku app is available [here](afternoon-savannah-3001.herokuapp.com).
+The codebase from Tuesday is available [here](https://github.com/michaellennox/bookmark_manager/tree/chris) and the heroku app is available [here](https://afternoon-savannah-3001.herokuapp.com/).
