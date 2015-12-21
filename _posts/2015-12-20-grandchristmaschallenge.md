@@ -20,5 +20,6 @@ So my plans for this Christmas:
 * Eat some more
 * Build something without any guidance on the pi (at the moment I'm thinking a talking alarm clock) in Python
 * Eat and Drink and Sleep
+* Watch Jessica Jones
 
 I'm looking forwards to it all! (Although I'm now back in Yorkshire and it turns out the family don't own ANY monitors with a HDMI port... what madness is this?!?!)
