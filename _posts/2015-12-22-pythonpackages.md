@@ -20,7 +20,7 @@ category: devramble
     └── test_fizzbuzz.pyc
 ```
 
-Above is the file structure for my first play with Test Driven python, the (very conceptually basic) kata Makers' first introduced us to TDD with. I'm currently quickly running through it to get a bit of a grasp on Python's inbuilt unittest library (which is remarkably brilliant), the virtualenv concept and python's package structure.
+Above is the file structure for my first play with Test Driven python, the (very conceptually basic) kata Makers' first introduced us to TDD with. I'm currently quickly running through it to get a bit of a grasp on Python's inbuilt unittest library (which is remarkably brilliant), the virtualenv concept and python's package structure. Those `__init__.py` files are completely blank files which just tell python 'this is a package' and thus let me import them somewhere. Looking at it I probably didn't need to make the tests a package.
 
 One thing that first struck me when I started looking at python as a language is how minimalist the core API is, the docs for it might be god awful but that doesn't matter too much because they are documenting something that is so short and 'easy' to memorise, compared to the Ruby core API which is... let's just say incredibly long and extensive... it feels like a bit of a breath of fresh air.
 
