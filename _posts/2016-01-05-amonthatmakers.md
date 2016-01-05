@@ -100,6 +100,14 @@ I also worked on this challenge solo.
 
 * [Solo](https://github.com/michaellennox/bookmark_manager)
 
+##Chitter Challenge
+
+The weekend challenge for week 4, a basic twitter clone!
+
+I worked on this challenge solo.
+
+* [Solo](https://github.com/michaellennox/chitter-challenge) - [Heroku](http://chitter.michaellennox.me/)
+
 ##Miscelanious Stuff
 
 * Built a more complex templating system for the blog index
