@@ -79,7 +79,7 @@ Now let's create a file called app.js which will tie everything in our project t
 $ touch app.js
 ~~~
 
-~~~js
+~~~javascript
 // Within app.js
 
 // We require express and set it to a usable variable
@@ -168,7 +168,7 @@ Head back to your project's root directory and we'll now create a 'Gruntfile'. T
 
 Create a new file called `Gruntfile.js` then let's write our config:
 
-~~~js
+~~~javascript
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -195,7 +195,7 @@ While we're setting up basic scripts, let's also go back to our `package.json` a
 
 Our package.json should now look like this:
 
-~~~js
+~~~javascript
 {
   "name": "hello-node",
   "version": "1.0.0",
