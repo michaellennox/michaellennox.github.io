@@ -19,7 +19,7 @@ So first of all you need to get node itself, I would strongly advise making sure
 
 Let's boot up the terminal and get it installed!
 
-~~~bash
+~~~
 $ brew install node
 ~~~
 
@@ -31,7 +31,7 @@ If you've only used ruby gems before, the first thing you have to get your head 
 
 These are the basic commands for npm:
 
-~~~bash
+~~~
 # To install a package globally, the -g flag designates this:
 $ npm install -g <package-name>
 
@@ -52,7 +52,7 @@ This will boot up a config script which let's you set many basic items of the `p
 
 For now, fill in any basic information you fancy.
 
-~~~bash
+~~~
 $ mkdir hello-node
 $ npm init hello-node
 [fill-in-script]
@@ -65,7 +65,7 @@ You will now have a package.json file in the project which has the basic informa
 
 For our framework - we are going to use [Express.js](http://expressjs.com/), the defacto web framework for node currently. This we will need to install locally as a project dependency.
 
-~~~bash
+~~~
 $ npm install --save express
 ~~~
 
@@ -75,12 +75,11 @@ It's also important to note because of how node runs, it doesn't 'chain' require
 
 Now let's create a file called app.js which will tie everything in our project together.
 
-~~~bash
+~~~
 $ touch app.js
 ~~~
 
 {% highlight js %}
-
 // Within app.js
 
 // We require express and set it to a usable variable
@@ -90,12 +89,11 @@ var app = express();
 
 // We start the app server, the port is passed as an argument.
 app.listen(3000);
-
 {% endhighlight %}
 
 You can start this server with the very basic command
 
-~~~bash
+~~~
 $ node app.js
 ~~~
 
@@ -109,7 +107,7 @@ There are many, many, many other test stacks you can use and I'd say definitely 
 
 Let's get them all installed, certain ones need to be local and global, others just local.
 
-~~~bash
+~~~
 $ npm install -g grunt
 $ npm install -g grunt-cli
 $ npm install -g webdriverio
@@ -127,7 +125,7 @@ Now when running acceptance tests with this stack you need to have both your exp
 
 To start a selenium server it is the following command:
 
-~~~bash
+~~~
 $ selenium-standalone start
 ~~~
 
@@ -135,7 +133,7 @@ $ selenium-standalone start
 
 So let's make ourselves a test directory to handle all test-related things.
 
-~~~bash
+~~~
 $ mkdir test
 $ cd test
 ~~~
@@ -171,7 +169,6 @@ Head back to your project's root directory and we'll now create a 'Gruntfile'. T
 Create a new file called `Gruntfile.js` then let's write our config:
 
 {% highlight js %}
-
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -186,12 +183,11 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['webdriver']);
 };
-
 {% endhighlight %}
 
 We can now run our testsuite with the simple command
 
-~~~bash
+~~~
 $ grunt
 ~~~
 
@@ -229,7 +225,7 @@ We can now run our test suite with `$ npm test` and our server with `$ npm start
 
 So let's try this out! For the following set of commands you will need multiple terminals ready to go as 2 will be taken up by node and selenium.
 
-~~~bash
+~~~
 # within one terminal, boot up selenium
 $ selenium-standalone start
 
