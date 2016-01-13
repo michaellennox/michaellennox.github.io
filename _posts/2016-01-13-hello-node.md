@@ -19,11 +19,11 @@ So first of all you need to get node itself, I would strongly advise making sure
 
 Let's boot up the terminal and get it installed!
 
-{% highlight %}
+```
 
 $ brew install node
 
-{% endhighlight %}
+```
 
 huzzah! We now have node so let's talk a bit about (npm)[https://www.npmjs.com/] or the node package manager.
 
@@ -33,8 +33,7 @@ If you've only used ruby gems before, the first thing you have to get your head 
 
 These are the basic commands for npm:
 
-{% highlight %}
-
+```
 # To install a package globally, the -g flag designates this:
 $ npm install -g <package-name>
 
@@ -43,8 +42,7 @@ $ npm install --save-dev <package-name>
 
 # To install a package locally as a dependency, the --save flag designates this:
 $ npm install --save <package-name>
-
-{% endhighlight %}
+```
 
 The concept of dev-dependency and application dependency can be thought of as 'is this needed in production?', if the answer is no, then it's a dev dependency.
 
@@ -56,14 +54,12 @@ This will boot up a config script which let's you set many basic items of the `p
 
 For now, fill in any basic information you fancy.
 
-{% highlight %}
-
+```
 $ mkdir hello-node
 $ npm init hello-node
 [fill-in-script]
 ...
-
-{% endhighlight %}
+```
 
 You will now have a package.json file in the project which has the basic information ready to go. Let's now get set up with a web framework and basic test system.
 
@@ -71,11 +67,9 @@ You will now have a package.json file in the project which has the basic informa
 
 For our framework - we are going to use [Express.js](http://expressjs.com/), the defacto web framework for node currently. This we will need to install locally as a project dependency.
 
-{% highlight %}
-
+```
 $ npm install --save express
-
-{% endhighlight %}
+```
 
 While we're here it's important to talk about node's package structure and how it manages module imports and requirements. Unlike many Ruby gems, node packages are generally meant to following single responsibility principles very closely, because of this you will find yourself having to use a LOT more of them than normal to get the same functionality. Don't see this as a bad thing though - you're not using lots of superflous stuff you're unlikely to ever touch!
 
@@ -83,14 +77,11 @@ It's also important to note because of how node runs, it doesn't 'chain' require
 
 Now let's create a file called app.js which will tie everything in our project together.
 
-{% highlight %}
-
+```
 $ touch app.js
+```
 
-{% endhighlight %}
-
-{% highlight js %}
-
+```js
 // Within app.js
 
 // We require express and set it to a usable variable
@@ -100,8 +91,7 @@ var app = express();
 
 // We start the app server, the port is passed as an argument.
 app.listen(3000);
-
-{% endhighlight %}
+```
 
 You can start this server with the very basic command
 
