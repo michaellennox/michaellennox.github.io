@@ -142,7 +142,7 @@ $ cd test
 
 Within test we now need to create our wdio config file. This is again just a simple script to build up the config file.
 
-~~~bash
+~~~
 $ wdio config
 ? Where do you want to execute your tests?
 > On my local machine
