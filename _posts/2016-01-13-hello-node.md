@@ -19,7 +19,7 @@ So first of all you need to get node itself, I would strongly advise making sure
 
 Let's boot up the terminal and get it installed!
 
-{% highlight %}
+{% highlight bash %}
 
 $ brew install node
 
