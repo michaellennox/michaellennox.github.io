@@ -4,7 +4,7 @@ title: Python Package Structure is Fascinating
 category: devramble
 ---
 
-```
+~~~
 .
 ├── README.md
 ├── app
@@ -18,7 +18,7 @@ category: devramble
     ├── __init__.pyc
     ├── test_fizzbuzz.py
     └── test_fizzbuzz.pyc
-```
+~~~
 
 Above is the file structure for my first play with Test Driven python, the (very conceptually basic) kata Makers' first introduced us to TDD with. I'm currently quickly running through it to get a bit of a grasp on Python's inbuilt unittest library (which is remarkably brilliant), the virtualenv concept and python's package structure. Those `__init__.py` files are completely blank files which just tell python 'this is a package' and thus let me import them somewhere. Looking at it I probably didn't need to make the tests a package but how they function is fairly interesting.
 
