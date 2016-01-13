@@ -20,9 +20,7 @@ So first of all you need to get node itself, I would strongly advise making sure
 Let's boot up the terminal and get it installed!
 
 ~~~bash
-
 $ brew install node
-
 ~~~
 
 huzzah! We now have node so let's talk a bit about (npm)[https://www.npmjs.com/] or the node package manager.
@@ -33,7 +31,7 @@ If you've only used ruby gems before, the first thing you have to get your head 
 
 These are the basic commands for npm:
 
-```
+~~~bash
 # To install a package globally, the -g flag designates this:
 $ npm install -g <package-name>
 
@@ -42,7 +40,7 @@ $ npm install --save-dev <package-name>
 
 # To install a package locally as a dependency, the --save flag designates this:
 $ npm install --save <package-name>
-```
+~~~
 
 The concept of dev-dependency and application dependency can be thought of as 'is this needed in production?', if the answer is no, then it's a dev dependency.
 
@@ -54,12 +52,12 @@ This will boot up a config script which let's you set many basic items of the `p
 
 For now, fill in any basic information you fancy.
 
-```
+~~~bash
 $ mkdir hello-node
 $ npm init hello-node
 [fill-in-script]
 ...
-```
+~~~
 
 You will now have a package.json file in the project which has the basic information ready to go. Let's now get set up with a web framework and basic test system.
 
@@ -67,9 +65,9 @@ You will now have a package.json file in the project which has the basic informa
 
 For our framework - we are going to use [Express.js](http://expressjs.com/), the defacto web framework for node currently. This we will need to install locally as a project dependency.
 
-```
+~~~bash
 $ npm install --save express
-```
+~~~
 
 While we're here it's important to talk about node's package structure and how it manages module imports and requirements. Unlike many Ruby gems, node packages are generally meant to following single responsibility principles very closely, because of this you will find yourself having to use a LOT more of them than normal to get the same functionality. Don't see this as a bad thing though - you're not using lots of superflous stuff you're unlikely to ever touch!
 
@@ -77,11 +75,11 @@ It's also important to note because of how node runs, it doesn't 'chain' require
 
 Now let's create a file called app.js which will tie everything in our project together.
 
-```
+~~~bash
 $ touch app.js
-```
+~~~
 
-```js
+~~~js
 // Within app.js
 
 // We require express and set it to a usable variable
@@ -91,13 +89,13 @@ var app = express();
 
 // We start the app server, the port is passed as an argument.
 app.listen(3000);
-```
+~~~
 
 You can start this server with the very basic command
 
-```
+~~~bash
 $ node app.js
-```
+~~~
 
 At which point you will be able to visit the server in your browser at `http://localhost:3000/`! In a later walkthrough we will also cover using npm for start-up scripts to isolate different environments but this will function for now.
 
@@ -109,7 +107,7 @@ There are many, many, many other test stacks you can use and I'd say definitely 
 
 Let's get them all installed, certain ones need to be local and global, others just local.
 
-```
+~~~bash
 $ npm install -g grunt
 $ npm install -g grunt-cli
 $ npm install -g webdriverio
@@ -121,28 +119,28 @@ $ npm install --save-dev webdriverio
 $ npm install --save-dev selenium-standalone
 $ npm install --save-dev mocha
 $ npm install --save-dev chai
-```
+~~~
 
 Now when running acceptance tests with this stack you need to have both your express server AND a selenium server up and running before you start the testrunner.
 
 To start a selenium server it is the following command:
 
-```
+~~~bash
 $ selenium-standalone start
-```
+~~~
 
 ## Configuring webdriverio
 
 So let's make ourselves a test directory to handle all test-related things.
 
-```
+~~~bash
 $ mkdir test
 $ cd test
-```
+~~~
 
 Within test we now need to create our wdio config file. This is again just a simple script to build up the config file.
 
-```
+~~~bash
 $ wdio config
 ? Where do you want to execute your tests?
 > On my local machine
@@ -160,7 +158,7 @@ $ wdio config
 > (http://localhost:3000)
 
 Configuration file was created successfully!
-```
+~~~
 
 You will receive a message saying that the file was created and that you can run your tests via `wdio wdio.conf.js`, this is one way to do it but what we're going to cover next is to run via grunt with grunt-webdriver.
 
@@ -170,7 +168,7 @@ Head back to your project's root directory and we'll now create a 'Gruntfile'. T
 
 Create a new file called `Gruntfile.js` then let's write our config:
 
-```js
+~~~js
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -185,19 +183,19 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['webdriver']);
 };
-```
+~~~
 
 We can now run our testsuite with the simple command
 
-```
+~~~bash
 $ grunt
-```
+~~~
 
 While we're setting up basic scripts, let's also go back to our `package.json` and add the following two scripts to the "Scripts" section `"start": "node app.js",` and `"test": "grunt"`.
 
 Our package.json should now look like this:
 
-```js
+~~~js
 {
   "name": "hello-node",
   "version": "1.0.0",
@@ -221,13 +219,13 @@ Our package.json should now look like this:
     "webdriverio": "^3.4.0"
   }
 }
-```
+~~~
 
 We can now run our test suite with `$ npm test` and our server with `$ npm start`. While a bit uneccessary at this level it's important to take note of how we can isolate environments for later, for example we may want to manage multiple different types of environment, test, dev and prod for example and we can set up unique startup scripts for each one of them.
 
 So let's try this out! For the following set of commands you will need multiple terminals ready to go as 2 will be taken up by node and selenium.
 
-```
+~~~bash
 # within one terminal, boot up selenium
 $ selenium-standalone start
 
@@ -250,6 +248,6 @@ pattern ./test/specs/**/*.js did not match any file
 
 
 Done, without errors.
-```
+~~~
 
 Huzzah! Our test runner works, our scripts work and everything is coming together nicely. The hardest most irritating part of node is behind you (at least as far as we found) and it's actually set up. Now for the fun of actually writing things.
