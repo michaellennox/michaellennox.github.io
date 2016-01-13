@@ -80,6 +80,7 @@ $ touch app.js
 ~~~
 
 {% highlight js %}
+
 // Within app.js
 
 // We require express and set it to a usable variable
@@ -89,6 +90,7 @@ var app = express();
 
 // We start the app server, the port is passed as an argument.
 app.listen(3000);
+
 {% endhighlight %}
 
 You can start this server with the very basic command
@@ -169,6 +171,7 @@ Head back to your project's root directory and we'll now create a 'Gruntfile'. T
 Create a new file called `Gruntfile.js` then let's write our config:
 
 {% highlight js %}
+
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -183,7 +186,8 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['webdriver']);
 };
-{% endhighlight }
+
+{% endhighlight %}
 
 We can now run our testsuite with the simple command
 
