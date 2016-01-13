@@ -79,7 +79,7 @@ Now let's create a file called app.js which will tie everything in our project t
 $ touch app.js
 ~~~
 
-~~~javascript
+{% highlight js %}
 // Within app.js
 
 // We require express and set it to a usable variable
@@ -89,7 +89,7 @@ var app = express();
 
 // We start the app server, the port is passed as an argument.
 app.listen(3000);
-~~~
+{% endhighlight %}
 
 You can start this server with the very basic command
 
@@ -168,7 +168,7 @@ Head back to your project's root directory and we'll now create a 'Gruntfile'. T
 
 Create a new file called `Gruntfile.js` then let's write our config:
 
-~~~javascript
+{% highlight js %}
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -183,7 +183,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['webdriver']);
 };
-~~~
+{% endhighlight }
 
 We can now run our testsuite with the simple command
 
@@ -195,7 +195,7 @@ While we're setting up basic scripts, let's also go back to our `package.json` a
 
 Our package.json should now look like this:
 
-~~~javascript
+{% highlight js %}
 {
   "name": "hello-node",
   "version": "1.0.0",
@@ -219,7 +219,7 @@ Our package.json should now look like this:
     "webdriverio": "^3.4.0"
   }
 }
-~~~
+{% endhighlight %}
 
 We can now run our test suite with `$ npm test` and our server with `$ npm start`. While a bit uneccessary at this level it's important to take note of how we can isolate environments for later, for example we may want to manage multiple different types of environment, test, dev and prod for example and we can set up unique startup scripts for each one of them.
 
