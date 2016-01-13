@@ -19,11 +19,11 @@ So first of all you need to get node itself, I would strongly advise making sure
 
 Let's boot up the terminal and get it installed!
 
-{% highlight bash %}
+~~~bash
 
 $ brew install node
 
-{% endhighlight %}
+~~~
 
 huzzah! We now have node so let's talk a bit about (npm)[https://www.npmjs.com/] or the node package manager.
 
