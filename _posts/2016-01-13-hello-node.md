@@ -23,7 +23,7 @@ Let's boot up the terminal and get it installed!
 $ brew install node
 ~~~
 
-huzzah! We now have node so let's talk a bit about (npm)[https://www.npmjs.com/] or the node package manager.
+huzzah! We now have node so let's talk a bit about [npm](https://www.npmjs.com/) or the node package manager.
 
 ## NPM - Node Package Manager
 
