@@ -107,6 +107,8 @@ There are many, many, many other test stacks you can use and I'd say definitely 
 
 Let's get them all installed, certain ones need to be local and global, others just local.
 
+Note, for Selenium you need to have Java installed beforehand. I'd advise using brew to install it if you're on a mac.
+
 ~~~
 $ npm install -g grunt
 $ npm install -g grunt-cli
@@ -122,6 +124,12 @@ $ npm install --save-dev chai
 ~~~
 
 Now when running acceptance tests with this stack you need to have both your express server AND a selenium server up and running before you start the testrunner.
+
+Once selenium is installed, you need to run `selenium-stadalone install` before you can make use of it.
+
+~~~
+$ selenium-standalone install
+~~~
 
 To start a selenium server it is the following command:
 
