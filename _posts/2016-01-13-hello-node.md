@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Hello Node - Getting Started in Node
+title: Hello Node - Getting Started in Node Part 1
 category: devramble
 tag: makers
 ---
@@ -251,3 +251,5 @@ Done, without errors.
 ~~~
 
 Huzzah! Our test runner works, our scripts work and everything is coming together nicely. The hardest most irritating part of node is behind you (at least as far as we found) and it's actually set up. Now for the fun of actually writing things.
+
+[Part 2 can be found here](http://www.michaellennox.me/devramble/2016/01/14/hello-node2.html)
