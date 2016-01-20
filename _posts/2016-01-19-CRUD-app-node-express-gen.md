@@ -10,7 +10,9 @@ This continues on from my previous two posts about getting started in Node. It i
 The very basics of getting started with Node and Express can be found in my previous two posts.
 
 ##Hello Node
+
 [Part 1 can be found here](http://www.michaellennox.me/devramble/2016/01/13/hello-node.html)
+
 [Part 2 can be found here](http://www.michaellennox.me/devramble/2016/01/14/hello-node2.html)
 
 So assuming you've got the basics in place from the previous two posts, you have most of the packages that you need globally already, the big difference this time is we are going to start off by using the [express generator](http://expressjs.com/en/starter/generator.html) which is a package designed to quickly set up an express project. This particular post is going to walk through the files it generates to try and explain a) what exactly has happened and b) how to set up a few small npm scripts designed to isolate your dev and test environments.
