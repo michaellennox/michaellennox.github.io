@@ -134,6 +134,8 @@ We also actually did our first two features, our mergers and pushed back into de
 * 60d6850 2016-02-01 | Adds scaffolding for project (origin/master) [michaellennox]
 ~~~
 
+![merged branches](http://i.imgur.com/jFpN0Pd.png)
+
 Giamir merged back in to our master first, I then pulled from master, fixed the conflicts, made a few final adjustments before we merged back in and then were away.
 
 I'm excited as ever to actually be building something by our own steam so here we go. I guess we'll be able to see whether our choice was a little too stupid or not soon!
