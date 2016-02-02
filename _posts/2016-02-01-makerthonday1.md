@@ -62,7 +62,7 @@ __Testing__:
 
 * Jasmine
 * Protractor
-*
+* Karma
 
 How smart this is, considering we have 1 person in a team of 4 who feels comfortable writing an express/node API, not really anyone who feels that confident with Angular and only one person who's good at making things purdy, I'm not really sure. Infact I'm pretty certain we're morons because not only are we using technologies we don't really know or feel comfortable with but we're using them for a use case where a SQL DB and a 'traditional' MVC framework such as Sinatra, Rails, Flask or Django would make much more sense, but hey!
 
