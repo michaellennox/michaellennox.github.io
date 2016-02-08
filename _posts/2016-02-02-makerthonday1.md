@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: One day, 500 insertions, 3/8s CRUD
+title: Makerthon Day 1. One day, 500 insertions, 3/8s CRUD
 category: devramble
 tag: makers
 ---
