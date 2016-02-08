@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Makerthon Day 1! Tom Needs Validation
+title: Makerthon Design Sprint. Tom Needs Validation!
 category: devramble
 tag: makers
 ---
