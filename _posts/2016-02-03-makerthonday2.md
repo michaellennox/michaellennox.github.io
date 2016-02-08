@@ -15,4 +15,4 @@ At this stage we had also carried out a total of 88 Github actions (pull request
 
 ![waffle at the end](http://i.imgur.com/cetXZoZ.png)
 
-We had a working app, it functioned pretty much how we were hoping, there was just the pesky cases of setting up a CI system, deploying it and maybe adding in a couple of validations to make sure some random numpty didn't come and destroy our databases.
+We had a working app, it functioned pretty much how we were hoping, there was just the pesky cases of setting up a CI system, deploying it and maybe adding in a couple of validations to make sure some random numpty didn't come and destroy our databases. Tommorrow is presentation - we just have a few beautification and minor actions such as setting up a CI server and we will be ready and raring. I'm incredibly pleased in how well our team has worked together, in most cases learning brand new technologies and built a working and usable application that is fully tested in 2 days.
